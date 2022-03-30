@@ -1,10 +1,7 @@
 ﻿  Q2.1.c
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(64,30): warning C4305: 'function': truncation from 'double' to 'float'
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(79,35): warning C4020: 'Reverse': too many actual parameters
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(124,24): warning C4047: '=': 'unsigned long' differs in levels of indirection from 'void *'
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(96,7): warning C4101: 'tempName': unreferenced local variable
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(184,31): warning C4047: '!=': 'long' differs in levels of indirection from 'void *'
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(216,57): warning C4244: '+=': conversion from 'float' to 'unsigned long', possible loss of data
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(220,13): warning C4098: 'UpdateWorker': 'void' function returning a value
-C:\Users\Oran\source\repos\Q2\Q2\Q2.1.c(224,1): warning C4029: declared formal parameter list different from definition
-  Q2.vcxproj -> C:\Users\Oran\source\repos\Q2\x64\Debug\Q2.exe
+C:\Users\Oran\source\repos\Q2\C-Projects\Q2\Q2.1.c(64,30): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\Oran\source\repos\Q2\C-Projects\Q2\Q2.1.c(77,35): warning C4020: 'Reverse': too many actual parameters
+C:\Users\Oran\source\repos\Q2\C-Projects\Q2\Q2.1.c(212,57): warning C4244: '+=': conversion from 'float' to 'unsigned long', possible loss of data
+C:\Users\Oran\source\repos\Q2\C-Projects\Q2\Q2.1.c(216,13): warning C4098: 'UpdateWorker': 'void' function returning a value
+C:\Users\Oran\source\repos\Q2\C-Projects\Q2\Q2.1.c(220,1): warning C4029: declared formal parameter list different from definition
+  Q2.vcxproj -> C:\Users\Oran\source\repos\Q2\C-Projects\x64\Debug\Q2.exe

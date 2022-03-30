@@ -68,10 +68,8 @@ void main()
 
 	//Check for worker index
 	printf("Check for workers index..\n\n");
-	int check = 3;
-	//scanf("Search worker ID: %d\n\n", &check);
+	int check = 208447268;
 	printf("Worker index: %d \n",IndexR(workerList, check));
-	//scanf("Search worker ID: %d\n\n", &check);
 	printf("Worker index: %d \n", IndexA(workerList, check));
 
 
@@ -103,25 +101,23 @@ Worker* CreateWorker(int yearType)//Create new Worker
 	scanf("%d",&ptrWorker->ID);
 
 	//Name input
-	//puts("Name:");
-	//scanf("%s",tempName);
-	//ptrWorker->name = (char*)malloc(strlen(tempName) + 1);
-	//if (!ptrWorker->name)
-	//	puts("Not Enough Memory");
-	//strcpy(ptrWorker->name, tempName);
-	ptrWorker->name = NULL;
+	puts("Name:");
+	scanf("%s",tempName);
+	ptrWorker->name = (char*)malloc(strlen(tempName) + 1);
+	if (!ptrWorker->name)
+		puts("Not Enough Memory");
+	strcpy(ptrWorker->name, tempName);
 
 	//Paycheck input
 	puts("PayCheck number:");
 	scanf("%d",&ptrWorker->payCheck);
 
 	//Year input
-	//puts("Start year:");
-	//if(yearType)
-	//	scanf("%s",&ptrWorker->hebYear);
-	//else
-	//	scanf("%d",&ptrWorker->year);
-	ptrWorker->year = NULL;
+	puts("Start year:");
+	if(yearType)
+		scanf("%s",&ptrWorker->hebYear);
+	else
+		scanf("%d",&ptrWorker->year);
 	return ptrWorker;
 }
 
@@ -131,8 +127,8 @@ void PrintWorker(Worker* worker, int yearType)//Print all worker details
 		printf("ID number: %d\nName: %s\nPayCheck number: %d\nStart year: %s \n\n",
 			worker->ID, worker->name, worker->payCheck, worker->hebYear);
 	else 
-		printf("ID number: %d\nPayCheck number: %d\n\n",
-			worker->ID, worker->payCheck); //Name:% s\nStart year : % d \n
+		printf("ID number: %d\nName:% s\nPayCheck number: %d\nStart year : % d \n\n",
+			worker->ID,worker->name, worker->payCheck,worker->year);
 }
 
 WorkerList* AddWorker(WorkerList* head, Worker* w)
@@ -181,7 +177,7 @@ int IndexR(WorkerList* head, long unsigned id)
 int IndexA(WorkerList* head, long unsigned id)
 {
 	int res = 1;
-	while (head->data->ID != NULL)
+	while (head != NULL)
 	{
 		if (head->data->ID == id)
 			return res;
@@ -243,7 +239,6 @@ WorkerList* FreeWorkers(WorkerList* head)
 		free(copyHead);//Free last node
 		copyHead = head;
 	}
-	//head->next = NULL;
 	free(head);
 	return head;
 }
